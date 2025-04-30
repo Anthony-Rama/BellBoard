@@ -1,50 +1,56 @@
-# 📣 BellBoard  
-*A cross-platform digital bulletin board app built by Hofstra University's largest senior design team.*
+# 🧗 BellBoard  
+*A cross-platform social and route management app designed to pair with a custom-built smart rock climbing board.*
 
 ![Flutter](https://img.shields.io/badge/Built%20With-Flutter-blue.svg)  
 ![Firebase](https://img.shields.io/badge/Backend-Firebase-FFCA28.svg)  
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-## 🏫 Project Overview
+## 🧩 Project Overview
 
-**BellBoard** is a real-time, cross-platform bulletin board application developed by a six-person senior design team at **Hofstra University**. This ambitious project—part of the university’s largest senior design initiative to date—aims to modernize campus communication by combining **software and hardware into a unified experience**.
+**BellBoard** is a mobile-first, cross-platform application built to **improve accessibility in the rock climbing community** by combining social networking, custom route creation, and a physical smart climbing wall — all in one system. 
 
-BellBoard is not just a digital application. It is designed to **pair with a custom-built physical display board**, enabling users to post announcements through the app that are **mirrored in real-time** on a public physical screen via IoT integration. This hybrid approach ensures wide accessibility—both digitally and in-person.
+This app was developed by a six-person senior design team at **Hofstra University**, as part of the school’s largest senior design project to date. The goal was to create a **more affordable and community-focused alternative** to expensive proprietary climbing boards and apps on the market.
+
+BellBoard connects directly to a **custom-built LED rock climbing board**, enabling users to display routes, create problems, and climb interactively. The app also features a **social feed**, allowing users to follow each other, like, comment, and engage with climbing content.
 
 ---
 
 ## 🔧 Key Features
 
-- 🔔 **Dynamic Bulletin Feed** – Create, edit, and view announcements instantly  
-- 🌐 **Cross-Platform App** – Runs on Android, iOS, Web, macOS, Windows, and Linux  
-- 🔒 **Firebase Authentication** – Secure login and account management  
-- 🧑‍⚖️ **Role-Based Access Control** – Admins, staff, and general users have tailored permissions  
-- 🖼️ **Rich Media Support** – Upload images, flyers, and formatted messages  
-- 🔍 **Search & Filter** – Quickly locate posts by tag, type, or date  
-- 📅 **Time-Based Scheduling** – Set post lifespans or display durations  
-- 📺 **Hardware Sync** – Posts pushed to a physical LED/monitor display in real time  
+- 🔐 **Login & Account Creation** – Firebase authentication for secure sign-up and login  
+- 🧗 **Custom Route Builder** – Create your own climbing problems and assign grades  
+- 🧠 **Preset Routes** – Built-in problems for Beginner, Intermediate, and Expert levels  
+- 📲 **Board Integration** – Send custom or preset routes directly to the physical board  
+- 📸 **Climbing Social Feed** – Post, like, comment, follow, and share beta with other users  
+- 🔍 **Search for Climbers** – Find and connect with users by username  
+- 📈 **Community Growth** – Build and follow climbers' progress, solve new problems daily  
+- 🧱 **Affordable + Open Design** – Designed as a low-cost, accessible solution for at-home or gym use  
 
 ---
 
-## 🔌 Hardware Integration
+## 🔌 Hardware Pairing
 
-The **physical BellBoard** is a custom-built smart bulletin board designed to receive data from the app via cloud services. Built using microcontroller-based display technology, it connects to Firebase and updates dynamically as new announcements are posted in the app.
+The app connects with a **custom-built rock climbing wall** featuring:
 
-- Powered by a microcontroller with network capability (e.g. Raspberry Pi or ESP32)  
-- Connects to Firestore to fetch and display messages  
-- Displays important campus alerts or daily schedules on public monitors  
+- Addressable LED holds powered by a microcontroller (e.g. Raspberry Pi or ESP32)  
+- Firebase cloud communication for real-time route syncing  
+- Physical route display based on user selection or custom creation  
+- Bidirectional sync for app-to-wall route control and preview  
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Layer               | Technology                |
-|---------------------|----------------------------|
-| **Frontend**        | Flutter (Dart)             |
-| **Backend**         | Firebase (Auth, Firestore) |
-| **Hardware Sync**   | Firebase SDK, IoT Display  |
-| **State Management**| Provider                   |
-| **CI/CD**           | GitHub Actions             |
+| Layer                 | Technology                          |
+|-----------------------|--------------------------------------|
+| **Frontend**          | Flutter (Dart)                       |
+| **Backend**           | Firebase (Authentication, Firestore, Storage, Realtime Database) |
+| **Authentication**    | Firebase Auth (Email/Password)       |
+| **Social Features**   | Firestore (likes, comments, follows, posts) |
+| **Route Management**  | Firestore + Custom Logic              |
+| **Hardware Sync**     | Firebase SDK, ESP32/Raspberry Pi, LED Matrix |
+| **State Management**  | Provider                             |
+| **CI/CD**             | GitHub Actions                       |
 
 ---
 
